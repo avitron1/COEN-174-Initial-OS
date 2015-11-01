@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+	<body>
+
+	<?php
+	$con = mysql_connect("dbserver.engr.scu.edu", "", "");
+
+if (!$con)
+{
+	die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db("sdb_kcai", $con);
+
+$table = '';
+$SQL = "SELECT * FROM ";
+$result = mysql_query($SQL);
+
+//loop goes through table and shows entries
+while ($row = mySQL_fetch_array($result)){
+	echo "";
+}
+
+mysql_close($con)
+?>
