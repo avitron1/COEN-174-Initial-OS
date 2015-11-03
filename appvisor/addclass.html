@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+
+  <body role="document">
+    <div class="container">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Add Classes</h1>
+        <p>Add the class you want here as well as the Santa Clara University class that it matches.</p>
+      </div>
+      <form class="form-horizontal" name="form1" method="post" action="classpost.php">
+        <div class="row">
+          <div class="col-md-5">         
+            <label for="inputclass">Type in the name of your class</label>
+            <input type="text" name="inputclass" class="form-control" placeholder="example: COEN 101">
+          </div>
+          <div class="col-md-5">
+            <label for="currentclass">Select the Santa Clara class it matches.</label>
+            <select name="currentclass" class="form-control">
+              <option value="coen12">COEN 12</option>
+              <option value="coen19">COEN 19</option>
+              <option value="coen20">COEN 20</option>
+              <option value="coen21">COEN 21</option>
+              <option value="coen70">COEN 70</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <br/>
+            <button class="btn" type="submit">Add Class</button>
+          </div>
+        </div>
+      </form>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </body>
+</html>
